@@ -47,13 +47,6 @@ script:
 #   $DOCTESTS -m $TESTMODE $COVERAGE; fi
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]] && [[ "$TOKENV" == "py35" ]]; then python3 runtests.py
   $DOCTESTS -m $TESTMODE $COVERAGE; fi
-branches:
-  only:
-  - master
-  - 0.3.x
-  - 1.0.x
-  - 1.1.x
-  - 1.3.x
 after_success:
 - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then if [ "${TESTMODE}" == "full" ];
   then cp build/test/.coverage . && coveralls; fi; fi
