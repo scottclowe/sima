@@ -13,19 +13,19 @@ matrix:
     env: TOKENV=py27 TESTMODE=full COVERAGE=--coverage DOCTESTS=--doctests
   - os: linux
     python: 3.4
-    env: TOKENV=py34 TESTMODE=full COVERAGE=--coverage DOCTESTS=""
+    env: TOKENV=py34 TESTMODE=full COVERAGE=--coverage DOCTESTS=--doctests
   - os: linux
     python: 3.5
-    env: TOKENV=py35 TESTMODE=full COVERAGE=--coverage DOCTESTS=""
+    env: TOKENV=py35 TESTMODE=full COVERAGE=--coverage DOCTESTS=--doctests
   - os: linux
     python: 3.6
-    env: TOKENV=py36 TESTMODE=full COVERAGE=--coverage DOCTESTS=""
+    env: TOKENV=py36 TESTMODE=full COVERAGE=--coverage DOCTESTS=--doctests
   - os: linux
     python: 3.7
-    env: TOKENV=py37 TESTMODE=full COVERAGE=--coverage DOCTESTS=""
+    env: TOKENV=py37 TESTMODE=full COVERAGE=--coverage DOCTESTS=--doctests
   - os: linux
     python: 3.8
-    env: TOKENV=py38 TESTMODE=full COVERAGE=--coverage DOCTESTS=""
+    env: TOKENV=py38 TESTMODE=full COVERAGE=--coverage DOCTESTS=--doctests
   - os: osx
     osx_image: xcode8.3
     language: generic
